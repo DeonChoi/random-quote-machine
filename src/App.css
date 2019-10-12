@@ -1,0 +1,81 @@
+#app {
+  min-height: 100vh;
+  transition: all 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cairo', sans-serif;
+}
+#quote-box {
+  border-radius: 5px;
+  background-color: white;
+  height: 300px;
+  width: 550px; 
+  display:grid;
+  grid-template-areas: 
+            'quote quote quote'
+            '. . author'
+            'twitter . newQuote';
+  grid-template-columns: 100px 225px 225px;
+  grid-template-rows: 150px 75px 75px;
+}
+#quote {
+  grid-area: quote;
+  font-size:  1.75em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 35px;
+  margin-right: 35px;
+  margin-left: 35px;
+  transition: all 1s ease;
+}
+#quotes-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  transition: all 1s ease;
+}
+#author {
+  grid-area: author;
+  justify-self: start;
+  font-size:  1.1em;
+  margin-right: 35px;
+  justify-self: end;
+  align-self: center;
+  transition: all 1s ease;
+}
+#twitter{
+  grid-area: twitter;
+  margin-left: 35px;
+  margin-bottom: 15px;
+}
+#tweet-logo{
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  transition: all 1s ease;
+}
+
+#new-quote {
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  grid-area: newQuote;
+  font-size: 1em;
+  margin-right:  35px;
+  padding: 0;
+  border: 0;
+  color: white;
+  justify-self: end;
+  transition: all 1s ease;
+}
+#svg-credit{
+  display: block;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  transition: all 1s ease;
+}
+button:focus {
+  outline:0;
+}
